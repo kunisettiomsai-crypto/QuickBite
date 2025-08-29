@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍴 QuickBite — Food Delivery</h1>
+  </header>
+
+  <main>
+    <!-- Restaurant list -->
+    <section id="restaurants">
+      <h2>Restaurants</h2>
+      <div class="grid" id="restaurant-list"></div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="hidden">
+      <button onclick="goBack()" class="back-btn">← Back</button>
+      <h2 id="menu-title"></h2>
+      <div class="grid" id="menu-list"></div>
+    </section>
+
+    <!-- Cart -->
+    <aside id="cart">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <div id="cart-total">Total: ₹0</div>
+      <div id="checkout" class="hidden">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="text" id="address" placeholder="Delivery Address">
+        <button onclick="placeOrder()">Place Order</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
